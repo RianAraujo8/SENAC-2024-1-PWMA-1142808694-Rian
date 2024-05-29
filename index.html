@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestão de Restaurante</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="icon" href="/fotos/png-resturante.png" type="image/x-icon">
+    </head>
+    <body>
+        <!--------------------------------------------
+          *  Área de Cabeçahlo                        
+          *------------------------------------------->
+        <header>
+            <nav>
+                <span class="logo">Gestão de restaurante</span>
+                <ul class="menu">
+                    <li><a href="Reservas.html">Reservas</a></li>
+                    <li><a href="Estoque.html">Estoque</a></li>
+                    <li><a href="Pedidos.html">Pedidos</a></li>
+                    <li><a href="Finanças.html">Finanças</a></li>
+                    <li><a href="Gerenciais.html">Gerenciais</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--------------------------------------------
+          *     Área do Main                      
+          *------------------------------------------->
+        <main>
+            <!-- Section para Hero-->
+            <div class="container-hero">
+                <section class="hero">
+                    <!-- Parte 1 da Hero: -->
+                    <header class="hero-parte1-principal">
+                        <h1>Faça já a sua reserva!</h1>
+                        <hr>
+                        <h2 class="hero-subtitulo">
+                            Explore os pratos mais pedidos:
+                        </h2>
+                    </header>
+                    <!-- Parte 2 da Hero: IMAGENS -->
+                    <div class="hero-parte2-container-imagens">
+                       <figure><img src="fotos/restaurante.jpg"  alt="imagem ilustrativa de restaurante" ></figure>
+                    </div>
+                </section>
+            </div>
+            <!-- Section para Receitas-->
+            <section class="receitas">
+                <!-- Criar o Header -->
+                <header class="receita-header-cabecalho">
+                    <h2 class="receita-header-titulo-h2">Principais pratos e bebidas</h2>
+                    <hr class="receita-hr">
+                </header>
+                <!-- Carrossel de Pratos -->
+                <div class="carousel-container" style="background: #f5f5dc;">
+                    <h3>Pratos</h3>
+                    <div class="carousel" id="carousel-pratos">
+                        <div class="carousel-item">
+                            <img src="fotos/feijoada.jpg" alt="Feijoada">
+                            <p>Feijoada: Um clássico brasileiro feito com feijão preto e carnes variadas.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/strogonoff.jpg" alt="Strogonoff">
+                            <p>Strogonoff: Um prato cremoso de origem russa, feito com carne e molho especial.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/milanesa.jpg" alt="Bife à milanesa">
+                            <p>Bife à milanesa: Carne empanada e frita, servida com acompanhamentos variados.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/parmegiana.jpg" alt="Bife à parmegiana">
+                            <p>Bife à parmegiana: Carne empanada com molho de tomate e queijo derretido.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carrossel de Bebidas -->
+                <div class="carousel-container" style="background: #f5f5dc;">
+                    <h3>Bebidas</h3>
+                    <div class="carousel" id="carousel-bebidas">
+                        <div class="carousel-item">
+                            <img src="fotos/caipirinha.jpg" alt="Caipirinha">
+                            <p>Caipirinha: Bebida brasileira feita com limão, açúcar, gelo e cachaça.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/suco.jpg" alt="Suco natural">
+                            <p>Suco natural: Opção refrescante e saudável, feito com frutas frescas.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/refrigerante.jpg" alt="Refrigerante">
+                            <p>Refrigerante: Variedade de sabores para acompanhar suas refeições.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos/cafe.jpg" alt="Café">
+                            <p>Café: Bebida quente para finalizar sua refeição com chave de ouro.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--------------------------------------------
+          *     Área do Footer                      
+          *------------------------------------------->
+        <footer>
+            <p class="footer-copy">© 2024</p>
+            <p class="footer-autor">Plataforma de Gestão de restaurante</p>
+            <p class="footer-autor">Todos direitos reservados</p>
+        </footer>
+        <script src="carousel.js"></script>
+    </body>
 </html>
